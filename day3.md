@@ -14,11 +14,9 @@ ssh tony@<app_server_IP>
 sudo vi /etc/ssh/sshd_config
 ```
 - Look for the line `PermitRootLogin yes`
-
-- Change the value to no as seen below
-`PermitRootLogin no`
-
+- Change it to `PermitRootLogin no`
 - Restart the Server
 ```shell
 sudo systemctl restart sshd
 ```
+- Verify the configuration by trying to ssh into the server with root user
