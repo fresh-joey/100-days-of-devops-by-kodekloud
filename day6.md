@@ -29,4 +29,4 @@ b. Add a cron */5 * * * * echo hello > /tmp/cron_text for root user.
   */5 * * * * echo hello > /tmp/cron_text
   ```
 
-  - Repeat the above steps for all the servers
+- Repeat the above steps for all the servers
