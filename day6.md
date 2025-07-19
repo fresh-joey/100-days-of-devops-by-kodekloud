@@ -20,9 +20,9 @@ b. Add a cron */5 * * * * echo hello > /tmp/cron_text for root user.
   sudo systemctl enable crond
   sudo systemctl start crond
   ```
-- Add schedule to cron
+- Add a cronjob for the root user
   ```shell
-  crontab -e
+  sudo crontab -u root -e
   ```
 - Put the details as required
   ```ini
