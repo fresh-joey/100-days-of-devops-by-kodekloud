@@ -1,4 +1,4 @@
-# SElinux Installation and Configuration
+# SELinux Installation and Configuration
 
 Following a security audit, the xFusionCorp Industries security team has opted to enhance application and server security with SELinux. \
 To initiate testing, the following requirements have been established for App server 2 in the Stratos Datacenter:
@@ -12,15 +12,15 @@ To initiate testing, the following requirements have been established for App se
 ## Steps
 - SSH into the server
 - Install the required SELinux packages
-  ```shell
+  ```console
   sudo yum install -y selinux-policy selinux-policy-targeted
   ```
-- Edit SElinux configuration file
-  ```shell
+- Edit SELinux configuration file
+  ```console
   sudo vi /etc/selinux/config
   ```
-- Set ```ini SELINUX=disabled```
+- Set `SELINUX=disabled`
 - Verify the status of the SELinux setting
-  ```shell
+  ```console
   grep ^SELINUX= /etc/selinux/config
   ```
