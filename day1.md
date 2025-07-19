@@ -1,7 +1,10 @@
-# The task is to create a user named rose with a non-interactive shell
+# Linux User Setup with Non-Interactive Shell 
 
-## Solution
+## Requirement
+- The task is to create a user named `rose` with a non-interactive shell
 
-```shell
+## Steps
+- Add a user with the option of a non-interactive shell
+```console
 sudo useradd -s rose /sbin/nologin
 ```
