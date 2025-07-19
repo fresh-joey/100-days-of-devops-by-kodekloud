@@ -13,7 +13,7 @@ b. Add a cron */5 * * * * echo hello > /tmp/cron_text for root user.
 - SSH into the server
 - Install cronie
   ```shell
-  Sudo dnf install cronie
+  Sudo dnf install cronie -y
   ```
 - Enable and start the service
   ```shell
@@ -28,5 +28,8 @@ b. Add a cron */5 * * * * echo hello > /tmp/cron_text for root user.
   ```ini
   */5 * * * * echo hello > /tmp/cron_text
   ```
-
+- Check if a cron job is created for the root user in cron directory
+  ```console
+  sudo ls /var/spool/cron
+  ```
 - Repeat the above steps for all the servers
