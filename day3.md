@@ -6,9 +6,6 @@ Your task is to disable direct SSH root login on all app servers within the Stra
 
 ## Steps
 - SSH into the server
-```console
-ssh tony@<app_server_IP>
-```
 - Run the command below to modify the SSH configurations
 ```console
 sudo vi /etc/ssh/sshd_config
