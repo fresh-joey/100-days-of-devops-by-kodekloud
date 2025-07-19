@@ -1,4 +1,4 @@
-# Cronjob
+# Create a cronjob
 
 The Nautilus system admins team has prepared scripts to automate several day-to-day tasks. 
 They want them to be deployed on all app servers in Stratos DC on a set schedule. 
