@@ -11,7 +11,7 @@ The system admins team of xFusionCorp Industries has set up some scripts on jump
   ssh-keygen -t rsa -b 4096 -C tony
   ```
 - Using the -C flag when generating the keys ensures that the key can be easily identified with the tag, which could be an email or username.
-- Copy keys to server
+- Copy keys to the server
   ```console
   ssh-copy-id user@server-ip
   ```
@@ -19,4 +19,23 @@ The system admins team of xFusionCorp Industries has set up some scripts on jump
 - Then connect with the user and hostname of the server
   ```console
   ssh tony@stapp01
+  ```
+- Repeat the steps for all the servers
+
+## Optional Steps
+- If you would like to create an alias to log in with, like `ssh stapp01`, you can use a config file
+- Create a config file
+  ```console
+  nano ~/.ssh/config
+  ```
+- Enter the details as seen below, the Host carries the alias you want to use
+  ```ini
+  Host stapp01
+    Hostname 172.16.238.10
+    User tony
+    IdentityFile /path/to/the/ssh/privatekey
+  ```
+- Now you can simply log into the server with
+  ```console
+  ssh stapp01
   ```
