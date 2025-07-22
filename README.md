@@ -6,3 +6,5 @@
 - Day 4 - Script Execution Permissions
 - Day 5 - SELinux Installation and Configuration
 - Day 6 - Create a Cron Job
+- Day 7 -
+- Day 8 - Install Ansible
