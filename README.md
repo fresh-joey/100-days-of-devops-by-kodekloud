@@ -9,3 +9,4 @@
 - Day 7 - Linux SSH Authentication
 - Day 8 - Install Ansible
 - Day 9 - MariaDB Troubleshooting
+- Day 10 - Linux Bash Scripts
