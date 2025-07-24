@@ -1,4 +1,4 @@
-# Kinux Bash Scripts
+# Linux Bash Scripts
 
 ## Requirements
 The production support team of xFusionCorp Industries is working on developing some bash scripts to automate different day to day tasks. One is to create a bash script for taking websites backup. They have a static website running on App Server 3 in Stratos Datacenter, and they need to create a bash script named media_backup.sh which should accomplish the following tasks. (Also remember to place the script under /scripts directory on App Server 3).
@@ -25,8 +25,14 @@ d. Please make sure script won't ask for password while copying the archive file
   scp "$backup_dir/$file_name" $remote_user@$remote_host:$remote_dir/
   ```
 - Change permission to execute and owner
+  ```console
+  sudo chown -R $USER:$USER /scripts
+  chmod +x media_backup.sh
+  ```
 - Generate SSH keys for passwordless copy
   ```console
   ssh-keygen -t rsa -C Appserver3
   ssh-copy-id clint@172.16.238.16
   ```
+- Run the script
+- SSH into the backup server to verity the file was copied successfully
